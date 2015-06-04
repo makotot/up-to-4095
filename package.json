@@ -1,6 +1,6 @@
 {
   "name": "up-to-4095",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Up to 4095 css limit in IE9 & below.",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/makotot/depen.git"
+    "url": "https://github.com/makotot/up-to-4095.git"
   },
   "author": "makotot",
   "license": "MIT",
