@@ -8,6 +8,8 @@
 
 > Up to 4095 css limit in IE9 and below.
 
+<img src="screenshot.png" />
+
 
 ## Install
 
