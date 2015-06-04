@@ -1,19 +1,19 @@
 var fs = require('fs'),
   path = require('path'),
-  gonzales = require('gonzales-ast'),
-  css = require('css');
+  css = require('css'),
+  threshold = 4095;
 
 
 function getUptoLimit (stylesheet) {
   var ast = css.parse(fs.readFileSync(stylesheet, 'utf8'));
 
-  return ast;
+  return threshold - ast.stylesheet.rules.length;
 }
 
 
 module.exports = function (stylesheet, cb) {
 
-  if (!fs.existsSync(path.resolve(stylesheet))) {
+  if (!stylesheet || !fs.existsSync(path.resolve(stylesheet))) {
     cb(new Error(stylesheet + ' is not found!'));
   }
 
