@@ -1,6 +1,6 @@
 {
   "name": "up-to-4095",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Up to 4095 css limit in IE9 & below.",
   "main": "index.js",
   "bin": {
