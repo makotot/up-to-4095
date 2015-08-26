@@ -1,12 +1,14 @@
 # up-to-4095
 
-[![npm version](http://img.shields.io/npm/v/up-to-4095.svg?style=flat)](https://github.com/makotot/up-to-4095)
-[![travis](http://img.shields.io/travis/makotot/up-to-4095.svg?style=flat)](https://github.com/makotot/up-to-4095)
-[![dependencies](http://img.shields.io/david/makotot/up-to-4095.svg?style=flat)](https://github.com/makotot/up-to-4095)
-[![devDependencies](http://img.shields.io/david/dev/makotot/up-to-4095.svg?style=flat)](https://github.com/makotot/up-to-4095)
-[![License](http://img.shields.io/npm/l/up-to-4095.svg?style=flat)](https://github.com/makotot/up-to-4095)
+[![npm version](http://img.shields.io/npm/v/up-to-4095.svg?style=flat-square)](https://github.com/makotot/up-to-4095)
+[![travis](http://img.shields.io/travis/makotot/up-to-4095.svg?style=flat-square)](https://github.com/makotot/up-to-4095)
+[![dependencies](http://img.shields.io/david/makotot/up-to-4095.svg?style=flat-square)](https://github.com/makotot/up-to-4095)
+[![devDependencies](http://img.shields.io/david/dev/makotot/up-to-4095.svg?style=flat-square)](https://github.com/makotot/up-to-4095)
+[![License](http://img.shields.io/npm/l/up-to-4095.svg?style=flat-square)](https://github.com/makotot/up-to-4095)
 
 > Up to 4095 css limit in IE9 and below.
+
+<img src="screenshot.png" />
 
 
 ## Install

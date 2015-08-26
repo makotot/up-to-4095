@@ -1,6 +1,6 @@
 {
   "name": "up-to-4095",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Up to 4095 css limit in IE9 & below.",
   "main": "index.js",
   "bin": {
@@ -8,6 +8,10 @@
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/_mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makotot/up-to-4095.git"
   },
   "author": "makotot",
   "license": "MIT",
@@ -19,7 +23,20 @@
     "chalk": "^1.0.0",
     "css": "^2.2.0",
     "figures": "^1.3.5",
+<<<<<<< HEAD
     "meow": "^3.1.0",
     "postcss": "^5.0.2"
   }
+=======
+    "meow": "^3.1.0"
+  },
+  "keywords": [
+    "cli",
+    "ie",
+    "ie9",
+    "css",
+    "limit",
+    "4095"
+  ]
+>>>>>>> master
 }
