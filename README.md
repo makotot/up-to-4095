@@ -26,7 +26,7 @@ $ npm i -g up-to-4095
 ```js
 var upto4095 = require('up-to-4095');
 
-upto4095('./css/app.css', function (err, num) {
+upto4095(require('fs').readFileSync('./css/app.css', 'utf8'), function (err, num) {
   if (err) {
     throw err;
   }
