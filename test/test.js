@@ -5,7 +5,7 @@ var upto4095 = require('../'),
 
 describe('up-to-4095', function () {
   it('should return num', function () {
-    upto4095('./fixture/test.css', function (err, res) {
+    upto4095(require('fs').readFileSync('./fixture/test.css', 'utf8'), function (err, res) {
       expect(res).to.equal(-2);
     });
   });

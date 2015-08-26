@@ -3,6 +3,7 @@
 var meow = require('meow'),
   figures = require('figures'),
   chalk = require('chalk'),
+  fs = require('fs'),
   upto4095 = require('./');
 
 
@@ -21,16 +22,23 @@ if (!cli.input[0]) {
   process.exit(1);
 }
 
-upto4095(cli.input[0], function (err, res) {
-  if (err) {
-    throw err;
-  }
+try {
+  var stylesheet = fs.readFileSync(cli.input[0], 'utf8');
 
-  if (res > 0) {
-    console.log(chalk.green(figures.tick), ' ', chalk.bold(res), chalk.gray(' until the threshold.'));
-  } else if (res === 0) {
-    console.log(chalk.yellow(figures.warning), chalk.gray(' Just '), chalk.bold('4095.'));
-  } else {
-    console.log(chalk.red(figures.cross), '  ', chalk.bold(Math.abs(res)), chalk.gray(' exceeds the threshold.'));
-  }
-});
+  upto4095(stylesheet, function (err, res) {
+    if (err) {
+      throw err;
+    }
+
+    if (res > 0) {
+      console.log(chalk.green(figures.tick), ' ', chalk.bold(res), chalk.gray(' until the threshold.'));
+    } else if (res === 0) {
+      console.log(chalk.yellow(figures.warning), chalk.gray(' Just '), chalk.bold('4095.'));
+    } else {
+      console.log(chalk.red(figures.cross), '  ', chalk.bold(Math.abs(res)), chalk.gray(' exceeds the threshold.'));
+    }
+  });
+} catch (e) {
+  console.error(e);
+}
+
